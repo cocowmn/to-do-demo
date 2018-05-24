@@ -1,0 +1,37 @@
+{
+  "name": "to-do-sample",
+  "version": "1.0.0",
+  "description": "A sample web app demonstrating to-do capabilities",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "parcel src/index.html --port=8765",
+    "test": "jest"
+  },
+  "author": "@cocowmn",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "jest": "^22.4.4",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.8.1",
+    "ts-jest": "^22.4.6",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free-webfonts": "^1.0.9"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

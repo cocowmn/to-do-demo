@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="./styles/app.scss"/>
+    
+    <script defer src="./app.ts"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./styles/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="./styles/fontawesome/css/fa-regular.css">
+    <link rel="stylesheet" href="./styles/fontawesome/css/fa-solid.css">
+    <link rel="stylesheet" href="./styles/fontawesome/css/fa-brands.css">
+    
+    <title>Document</title>
+  </head>
+
+  <body padding bg-primary>
+
+    <nav
+      flex-stretch
+      bg-dark text-light
+      page-width
+      anti-padding margin-bottom
+      style="height: 50px;">
+        <div text-left style="width: 50px;">
+          <button id="logo-button">
+            <i class="fas fa-anchor"></i>
+          </button>
+        </div>
+        <div text-center style="flex: 8;">
+          <!-- spacer -->
+        </div>
+        <div text-right style="width: 50px;">
+          <button id="more-button">
+            <i class="fas fa-ellipsis-v"></i>
+          </button>
+        </div>
+    </nav>
+
+    <div page-index>
+
+      <article
+        full padding margin-bottom
+        bg-light shadow rounded>
+        <h2 text-primary>Font Modifiers</h2>
+        <h4 font-default>Default (Roboto)</h4>
+        <h4 font-mono>Monospace (Roboto Mono)</h4>
+        <h4 font-display>Display (Pacifico)</h4>
+      </article>
+  
+      <article
+        full padding margin-bottom
+        bg-light shadow rounded>
+        <h2 text-primary>Text Style Modifiers</h2>
+  
+        <ul>
+          <li>
+            <h1>Heading Level 1</h1>
+          </li>
+          <li>
+            <h2>Heading Level 2</h2>
+          </li>
+          <li>
+            <h3>Heading Level 3</h3>
+          </li>
+          <li>
+            <h4>Heading Level 4</h4>
+          </li>
+          <li>
+            <h5>Heading Level 5</h5>
+          </li>
+          <li>
+            <h6>Heading Level 6</h6>
+          </li>
+          <li>
+            <span text-bold>Bolded Text</span>
+          </li>
+          <li>
+            <span text-italic>Italic Text Text</span>
+          </li>
+          <li>
+            <span text-underline>Underlined Text</span>
+          </li>
+          <li>
+            <span text-strike>Strikethrough Text</span>
+          </li>
+          <li>
+            <a href="#">Anchor</a>
+          </li>
+          <li>
+            <span text-uppercase>uppercase</span>
+          </li>
+          <li>
+            <span text-lowercase>lOwErCase</span>
+          </li>
+          <li>
+            <span text-capitalize>capitalize</span>
+          </li>
+          <li full text-left>
+            Align Left
+          </li>
+          <li full text-right>
+            Align Right
+          </li>
+          <li full text-center>
+            Align Center
+          </li>
+          <li full text-justify>
+            Justified
+          </li>
+        </ul>
+      </article>
+  
+      <article
+        full padding margin-bottom
+        bg-light shadow rounded>
+        <h2 text-primary>Text Color Modifiers</h2>
+  
+        <h4 text-primary>Primary</h4>
+        <h4 text-accent>Accent</h4>
+        <h4 text-success>Success</h4>
+        <h4 text-warn>Warn</h4>
+        <h4 text-danger>Danger</h4>
+  
+        <div 
+          bg-accent full
+          margin-top anti-padding padding>
+          <h4 text-dark>Dark</h4>
+          <h4 text-light>Light</h4>
+          <h4 text-darker>Darker</h4>
+          <h4 text-lighter>Lighter</h4>
+        </div>
+      </article>
+  
+      <article
+        full padding margin-bottom
+        bg-light shadow rounded>
+        <h2 text-primary>Background Color Modifiers</h2>
+        <section flex-row>
+          <div
+            margin bg-primary
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+          <div
+            margin bg-accent
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+    
+          <div
+            margin bg-success
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+          <div
+            margin bg-warn
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+          <div
+            margin bg-danger
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+        </section>
+  
+        <section flex-row>
+          <div
+            margin bg-dark
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+          <div
+            margin bg-light
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+          <div
+            margin bg-darker
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+          <div
+            margin bg-lighter
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+        </section>
+      </article>
+  
+      <article
+        full padding margin-bottom
+        bg-light shadow rounded>
+        <h2 text-primary>Buttons</h2>
+  
+        <section flex-row margin-bottom>
+          <button primary>
+            <i class="fas fa-plus"></i>
+          </button>
+          <button accent>
+            <i class="fas fa-plus"></i>
+          </button>
+          <button success>
+            <i class="fas fa-plus"></i>
+          </button>
+          <button warn>
+            <i class="fas fa-plus"></i>
+          </button>
+          <button danger>
+            <i class="fas fa-plus"></i>
+          </button>
+          <button dark>
+            <i class="fas fa-plus"></i>
+          </button>
+          <button light>
+            <i class="fas fa-plus"></i>
+          </button>
+        </section>
+  
+        <section bg-darker
+          flex-row full
+          margin-bottom anti-padding padding margin-top>
+          <button primary outline>
+            <i class="fas fa-plug"></i>
+          </button>
+          <button accent outline>
+            <i class="fas fa-plug"></i>
+          </button>
+          <button success outline>
+            <i class="fas fa-plug"></i>
+          </button>
+          <button warn outline>
+            <i class="fas fa-plug"></i>
+          </button>
+          <button danger outline>
+            <i class="fas fa-plug"></i>
+          </button>
+          <button dark outline>
+            <i class="fas fa-plug"></i>
+          </button>
+          <button light outline>
+            <i class="fas fa-plug"></i>
+          </button>
+        </section>
+  
+        <section flex-row>
+          <button primary fab>
+            <i class="fas fa-pause"></i>
+          </button>
+          <button accent fab outline>
+            <i class="fas fa-pause"></i>
+          </button>
+          <button success fab>
+            <i class="fas fa-pause"></i>
+          </button>
+          <button warn fab outline>
+            <i class="fas fa-pause"></i>
+          </button>
+          <button danger fab>
+            <i class="fas fa-pause"></i>
+          </button>
+          <button dark fab outline>
+            <i class="fas fa-pause"></i>
+          </button>
+          <button light fab>
+            <i class="fas fa-pause"></i>
+          </button>
+        </section>
+  
+      </article>
+  
+      <article
+        full padding margin-bottom
+        bg-light shadow rounded>
+        <h2 text-primary>My Header</h2>
+        <p text-primary>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum perferendis error dolores, facere repellendus dolor iusto ullam ducimus, blanditiis optio omnis, neque dignissimos dicta sequi reiciendis! Repellat, commodi? Molestiae, ut.
+        </p>
+  
+        <section anti-padding margin-top>
+          <button danger full text-uppercase>
+            <span text-bold></span> <i class="fas fa-trash"></i>
+          </button>
+        </section>
+      </article>
+  
+      <article
+        full padding margin-bottom
+        bg-light shadow rounded>
+        <h2 text-primary>Flex Row(s)</h2>
+        <div flex-row bg-darker>
+          <div
+            margin bg-primary
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+          <div
+            margin bg-primary
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+          <div
+            margin bg-primary
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+          <div
+            margin bg-primary
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+          <div
+            margin bg-primary
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+        </div>
+  
+        <div flex-row>
+          <div
+            margin bg-primary
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+          <div
+            margin bg-primary
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+          <div
+            margin bg-primary
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+        </div>
+  
+        <div flex-row bg-darker>
+          <div
+            margin bg-primary
+            rounded shadow
+            style="width: 50px; height: 50px;">
+          </div>
+        </div>
+      </article>
+  
+      <article
+        full padding margin-bottom
+        bg-light shadow rounded>
+        <h2 text-primary>Flex Column(s)</h2>
+  
+        <div flex-row>
+          <div flex-column bg-darker>
+            <div
+              margin bg-primary
+              rounded shadow
+              style="width: 50px; height: 50px;">
+            </div>
+            <div
+              margin bg-primary
+              rounded shadow
+              style="width: 50px; height: 50px;">
+            </div>
+            <div
+              margin bg-primary
+              rounded shadow
+              style="width: 50px; height: 50px;">
+            </div>
+            <div
+              margin bg-primary
+              rounded shadow
+              style="width: 50px; height: 50px;">
+            </div>
+            <div
+              margin bg-primary
+              rounded shadow
+              style="width: 50px; height: 50px;">
+            </div>
+          </div>
+    
+          <div flex-column>
+            <div
+              margin bg-primary
+              rounded shadow
+              style="width: 50px; height: 50px;">
+            </div>
+            <div
+              margin bg-primary
+              rounded shadow
+              style="width: 50px; height: 50px;">
+            </div>
+            <div
+              margin bg-primary
+              rounded shadow
+              style="width: 50px; height: 50px;">
+            </div>
+          </div>
+    
+          <div flex-column bg-darker>
+            <div
+              margin bg-primary
+              rounded shadow
+              style="width: 50px; height: 50px;">
+            </div>
+          </div>
+        </div>
+      </article>
+  
+      <article
+        full padding margin-bottom
+        bg-light shadow rounded>
+        <h2 text-primary>Display Modifiers</h2>
+  
+        <div flex-row>
+          <div flex-column>
+            <div
+              margin bg-primary
+              shadow
+              style="width: 50px; height: 50px;">
+            </div>
+            <span text-accent text-bold>shadow</span>
+          </div>
+  
+          <div flex-column>
+            <div
+              margin bg-primary
+              rounded
+              style="width: 50px; height: 50px;">
+            </div>
+            <span text-accent text-bold>rounded</span>
+          </div>
+  
+          <div flex-center shadow
+            style="width: 150px; height: 150px;">
+            <div
+              margin bg-primary
+              style="width: 50px; height: 50px;">
+            </div>
+            <span text-accent text-bold>centered</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </body>
+</html>

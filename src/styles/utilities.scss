@@ -1,0 +1,277 @@
+@import url( './variables.scss' );
+@import url( 'https://fonts.googleapis.com/css?family=Pacifico|Roboto|Roboto+Mono' );
+
+// provided width and height settings incorporate padding, margin, and borders
+article, button {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+:root {
+  font-size: 16px;
+}
+
+// Font
+[font-default] { font-family: Roboto }
+[font-mono] { font-family: "Roboto Mono" }
+[font-display] { font-family: Pacifico }
+
+// Text Alignment
+[text-left] { text-align: left }
+[text-right] { text-align: right }
+[text-center] { text-align: center }
+[text-justify] { text-align: justify }
+
+// Text Transforms
+[text-uppercase] { text-transform: uppercase }
+[text-lowercase] { text-transform: lowercase }
+[text-capitalize] { text-transform: capitalize }
+
+[text-bold] { font-weight: 600 }
+[text-italic] { font-style: italic }
+[text-underline] { text-decoration: underline }
+[text-strike], [text-strikethrough] {
+  text-decoration: line-through
+}
+
+// Text Options
+h1 {
+  font-size: 2rem;
+  margin: calc( var( --margin-size ) / 2 ) 0px;
+}
+h2 {
+  font-size: 1.5rem;
+  opacity: 0.6;
+  margin: calc( var( --margin-size ) / 2 ) 0px;
+}
+h3 {
+  font-size: 1.35rem;
+  margin: calc( var( --margin-size ) / 2 ) 0px;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1rem;
+  margin: calc( var( --margin-size ) / 2 ) 0px;
+}
+h5 {
+  opacity: 0.6;
+  font-size: 0.9rem;
+  margin: calc( var( --margin-size ) / 2 ) 0px;
+}
+h6 {
+  font-style: italic;
+  font-size: 0.8rem;
+  margin: calc( var( --margin-size ) / 2 ) 0px;
+}
+
+p {
+  margin: calc( var( --margin-size ) / 2 ) 0px;
+  display: block;
+  font-size: 1rem;
+}
+
+// Text Color Modifiers
+[text-primary] { color: var( --color-primary ) }
+[text-accent] { color: var( --color-accent ) }
+
+[text-success] { color: var( --color-success ) }
+[text-warn] { color: var( --color-warn ) }
+[text-danger] { color: var( --color-danger ) }
+
+[text-dark] { color: var( --color-dark ) }
+[text-light] { color: var( --color-light ) }
+
+[text-darker] { color: var( --color-darker ) }
+[text-lighter] { color: var( --color-lighter ) }
+
+// Background Color Modifiers
+[bg-primary] { background-color: var( --color-primary ) }
+[bg-accent] { background-color: var( --color-accent ) }
+
+[bg-success] { background-color: var( --color-success ) }
+[bg-warn] { background-color: var( --color-warn ) }
+[bg-danger] { background-color: var( --color-danger ) }
+
+[bg-dark] { background-color: var( --color-dark ) }
+[bg-light] { background-color: var( --color-light ) }
+
+[bg-darker] { background-color: var( --color-darker ) }
+[bg-lighter] { background-color: var( --color-lighter ) }
+
+// Padding Options
+[padding] { padding: var( --padding-size ) }
+[padding-none] { padding: 0px !important }
+[anti-padding] {
+  margin: calc( -1 * var( --padding-size ));
+}
+
+[padding-vertical] { padding: var( --padding-size ) 0px }
+[padding-horizontal] { padding: 0px var( --padding-size ) }
+
+[padding-top] { padding-top: var( --padding-size ) }
+[padding-bottom] { padding-bottom: var( --padding-size ) }
+[padding-left] { padding-left: var( --padding-size ) }
+[padding-right] { padding-right: var( --padding-size ) }
+
+// Margin Options
+[margin] { margin: var( --margin-size ) }
+[margin-auto] { margin: auto }
+[margin-none] { margin: 0px !important }
+
+[margin-vertical] { margin: var( --margin-size ) 0px }
+[margin-horizontal] { margin: 0px var( --margin-size ) }
+
+[margin-top] { margin-top: var( --margin-size ) }
+[margin-bottom] { margin-bottom: var( --margin-size ) }
+[margin-left] { margin-left: var( --margin-size ) }
+[margin-right] { margin-right: var( --margin-size ) }
+
+// Display Options
+[full] { width: 100% }
+[page-width] { width: 100vw }
+[page-height] { height: 100vh }
+
+[rounded] { border-radius: 3px; }
+
+[shadow] { box-shadow: 2px 2px 15px var( --color-shadow ) }
+
+[flex-row] {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+[flex-column] {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+[flex-center] {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+[flex-stretch] {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: stretch;
+
+  * { flex: 1 }
+}
+
+// Buttons, buttons, buttons, (&buttons)
+button {
+  --button-color: var( color--primary );
+  --button-text: var( color--light );
+
+  display: inline-block;
+  padding: var( --padding-size );
+
+  margin: 0px;
+  
+  background-color: var( --button-color );
+  color: var( --button-text );
+  border: none;
+  cursor: pointer;
+  
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  box-shadow: 2px 2px 15px var( --color-shadow );
+}
+
+button[outline] {
+  background-color: transparent;
+  border: 3px solid var( --button-color );
+  color: var( --button-color );
+}
+
+button[outline]:hover {
+  color: var( --button-text );
+  background-color: var( --button-color );
+}
+
+button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+button[primary] {
+  --button-color: var( --color-primary );
+  --button-text: var( --color-light );
+}
+
+button[accent] {
+  --button-color: var( --color-accent );
+  --button-text: var( --color-light );
+}
+
+button[success] {
+  --button-color: var( --color-success );
+  --button-text: var( --color-light );
+}
+
+button[warn] {
+  --button-color: var( --color-warn );
+  --button-text: var( --color-light );
+}
+
+button[danger] {
+  --button-color: var( --color-danger );
+  --button-text: var( --color-light );
+}
+
+button[dark] {
+  --button-color: var( --color-dark );
+  --button-text: var( --color-light );
+}
+
+button[light] {
+  --button-color: var( --color-light );
+  --button-text: var( --color-dark );
+}
+
+button[fab] {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+}
+
+button[fab][top] {
+  position: absolute;
+  top: var( --margin-size );
+}
+button[fab][bottom] {
+  position: absolute;
+  bottom: var( --margin-size );
+}
+button[fab][left] {
+  position: absolute;
+  left: var( --margin-size );
+}
+button[fab][right] {
+  position: absolute;
+  right: var( --margin-size );
+}
+
+// Default overrides
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+
+pre {
+  font-family: "Roboto Mono", monospace;
+}
