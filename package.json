@@ -1,0 +1,17 @@
+{
+  "name": "to-do-sample",
+  "version": "1.0.0",
+  "description": "A sample web app demonstrating to-do capabilities",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src --port=9876",
+    "test": "jest"
+  },
+  "author": "@cocowmn",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "jest": "^22.4.4",
+    "live-server": "^1.2.0"
+  }
+}

@@ -1,0 +1,29 @@
+@import url('./utilities.css');
+
+:root {
+  font-family: Roboto;
+}
+
+body {
+  margin: 0px;
+}
+
+[page-index] {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+}
+
+@media( min-width: 900px ) {
+  [page-index] > article {
+    flex: 40%;
+    margin-right: var( --margin-size );
+  }
+}
+
+@media( min-width: 1200px ) {
+  [page-index] > article {
+    flex: 30%;
+    margin-right: var( --margin-size );
+  }
+}

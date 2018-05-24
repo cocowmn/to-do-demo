@@ -1,0 +1,19 @@
+:root {
+  --color-primary: #C2185B; /* Material Design Palette: PINK#700 */
+  --color-accent: #2196F3; /* Material Design Palette: BLUE#500 */
+
+  --color-success: #4CAF50; /* Material Design Palette: GREEN#500 */
+  --color-warn: #FFB300; /* Material Design Palette: AMBER#600 */
+  --color-danger: #F44336; /* Material Design Palette: RED#500 */
+
+  --color-dark: #222;
+  --color-light: #FAFAFA;
+
+  --color-darker: rgba( 0, 0, 0, 0.3 );
+  --color-lighter: rgba( 255, 255, 255, 0.3 );
+  
+  --color-shadow: rgba( 0, 0, 0, 0.13 );
+
+  --padding-size: 15px;
+  --margin-size: 15px;
+}
