@@ -167,8 +167,8 @@ p {
 
 /* Buttons, buttons, buttons, (&buttons)*/
 button {
-  --button-color: var( color--primary );
-  --button-text: var( color--light );
+  --button-color: var( --color--primary );
+  --button-text: var( --color--light );
 
   display: inline-block;
   padding: var( --padding-size );
@@ -240,6 +240,10 @@ button[dark] {
 button[light] {
   --button-color: var( --color-light );
   --button-text: var( --color-dark );
+}
+
+button[clear] {
+  --button-color: transparent !important;
 }
 
 button[fab] {
